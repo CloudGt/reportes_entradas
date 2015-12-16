@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archivocsv.controllers.VistaReportesController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="1122.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="440.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="555.0" minWidth="10.0" prefWidth="275.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="561.0" minWidth="10.0" prefWidth="407.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblNombre" alignment="CENTER" prefHeight="30.0" prefWidth="409.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="lblMes" alignment="CENTER" prefHeight="30.0" prefWidth="269.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="lblAnio" alignment="CENTER" prefHeight="52.0" prefWidth="561.0" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <TabPane fx:id="tbpReportes" layoutX="12.0" layoutY="50.0" prefHeight="542.0" prefWidth="1180.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tbEnero" onSelectionChanged="#colocarMesEnero" text="Enero">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvEnero" layoutX="6.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                          <columns>
+                            <TableColumn fx:id="tbcNumero" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                            <TableColumn fx:id="tbcEntrada" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalida" editable="false" minWidth="0.0" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadas" editable="false" minWidth="0.0" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tbFebrero" onSelectionChanged="#colocarMesFebrero" text="Febrero">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvFebrero" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroFeb" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaFeb" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaFeb" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasFeb" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tbMarzo" onSelectionChanged="#colocarMesMarzo" text="Marzo">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvMarzo" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroMar" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaMar" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaMar" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasMar" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbAbril" onSelectionChanged="#colocarMesAbril" text="Abril">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvAbril" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroAbr" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaAbr" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaAbr" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasAbr" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbMayo" onSelectionChanged="#colocarMesMayo" text="Mayo">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvMayo" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroMay" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaMay" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaMay" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasMay" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbJunio" onSelectionChanged="#colocarMesJunio" text="Junio">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvJunio" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroJun" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaJun" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaJun" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasJun" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbJulio" onSelectionChanged="#colocarMesJulio" text="Julio">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvJulio" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroJul" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaJul" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaJul" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasJul" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbAgosto" onSelectionChanged="#colocarMesAgosto" text="Agosto">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvAgosto" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroAgo" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaAgo" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaAgo" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasAgo" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbSeptiembre" onSelectionChanged="#colocarMesSeptiembre" text="Septiembre">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvSeptiembre" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroSep" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaSep" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaSep" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasSep" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbOctubre" onSelectionChanged="#colocarMesOctubre" text="Octubre">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvOctubre" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroOct" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaOct" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaOct" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasOct" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbNoviembre" onSelectionChanged="#colocarMesNoviembre" text="Noviembre">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvNoviembre" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroNov" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaNov" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaNov" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasNov" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbDiciembre" onSelectionChanged="#colocarMesDiciembre" text="Diciembre">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbvDiciembre" layoutX="7.0" layoutY="5.0" prefHeight="499.0" prefWidth="1164.0">
+                           <columns>
+                              <TableColumn fx:id="tbcNumeroDic" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="No." />
+                              <TableColumn fx:id="tbcEntradaDic" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Entrada" />
+                              <TableColumn fx:id="tbcSalidaDic" editable="false" prefWidth="377.0" resizable="false" sortable="false" text="Salida" />
+                              <TableColumn fx:id="tbcHorasTrabajadasDic" editable="false" prefWidth="364.0" resizable="false" sortable="false" text="Horas Trabajadas" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="#489ecd" height="44.72" radius="21.86" spread="0.17" width="44.72" />
+                           </effect>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TabPane>
+      <Button layoutX="1089.0" layoutY="604.0" mnemonicParsing="false" onAction="#cargarEntradasTarde" text="Entradas Tarde" AnchorPane.bottomAnchor="71.0" AnchorPane.topAnchor="604.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="213.48" color="#9eddffa1" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="1014.0" layoutY="604.0" mnemonicParsing="false" onAction="#regresar" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="213.48" color="#9eddffa1" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

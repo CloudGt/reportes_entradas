@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acpEmpleados" prefHeight="625.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archivocsv.controllers.RootLayoutController">
+   <children>
+      <Button layoutX="21.0" layoutY="231.0" mnemonicParsing="false" onAction="#cargarArchivo" onMouseEntered="#cambiarImagenAbrir" onMouseExited="#cambiarDeNuevoAbrir" prefHeight="25.0" prefWidth="78.0" text="Cargar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="213.48" color="#9eddffab" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEmpleados" layoutX="23.0" layoutY="419.0" mnemonicParsing="false" onAction="#verTodos" onMouseEntered="#cambiarImagenEmpleado" onMouseExited="#cambiarDeNuevoEmpleados" prefHeight="25.0" prefWidth="78.0" text="Empleados">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="213.48" color="#9eddffab" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fx:id="imAbrir" fitHeight="66.0" fitWidth="66.0" layoutX="27.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/abrir.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="23.0" layoutY="602.0" mnemonicParsing="false" onAction="#cerrarPrograma" onMouseEntered="#cambiarSalir" onMouseExited="#cambiarDeNuevoSalir" prefHeight="25.0" prefWidth="78.0" text="Salir" AnchorPane.topAnchor="602.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="213.48" color="#9eddffa1" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <ImageView fx:id="imEmpleados" fitHeight="87.0" fitWidth="85.0" layoutX="18.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/empleado.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imSalir" fitHeight="67.0" fitWidth="66.0" layoutX="27.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/salir.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="116.0" orientation="VERTICAL" prefHeight="684.0" prefWidth="15.0" />
+      <ImageView fitHeight="82.0" fitWidth="146.0" layoutX="-11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dacotrans%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

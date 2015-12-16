@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/archivocsv/controllers/VistaReportesController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>249</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/EntradasTardeController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/VistaEmpleadosController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/VistaReportesController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/VentanaMesController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/Images.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/EditarMarcacionController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/helpers/Helper.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/controllers/RootLayoutController.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/models/Empleado.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/helpers/Compartir.java</file>
+            <file>file:/C:/Users/DACO78/Documents/NetBeansProjects/ArchivoCSV/src/archivocsv/helpers/Dialogs.java</file>
+        </group>
+    </open-files>
+</project-private>
